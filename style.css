@@ -1,3 +1,34 @@
+*{
+  
+}
+
+body {
+  font: Arial;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+header {
+  background: #333;
+  color: #fff;
+  padding: lrem 0;
+  text-align: center;
+}
+header h1 {
+  font-size: 2.5 rem;
+}
+header p {
+  margin: 0.5 rem 0 0;
+  font-style: italic;
+}
+main {
+  max-width: 800 px;
+  margin: 2 rem auto;
+  padding: 0 lrem;
+}
+
+.
+
 h1{
   color: red;
 }
