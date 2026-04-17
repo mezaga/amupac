@@ -12,7 +12,7 @@ body {
 
 main{
     background-color: #03173a; /* Gris claro */
-    padding: 0rem 3rem;
+    padding: 0rem 5rem;
     padding-bottom: 2.5rem;
     width: 1200px;
     min-height: calc(100vh - 300px); /* Resta la altura del header */
