@@ -130,7 +130,7 @@ section h1{
     flex: 1;
 }
 
-.contenedor img{
+.texto img{
     display: block;       /* Necesario para usar margin auto */
     margin: 2.5rem auto;       /* Centra horizontalmente */
 }
