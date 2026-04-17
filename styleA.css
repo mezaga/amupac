@@ -131,8 +131,8 @@ section h1{
 }
 
 .texto img{
-    justify-content: center;
-    margin: 2.5rem;
+    display: block;       /* Necesario para usar margin auto */
+    margin: 2.5rem auto;       /* Centra horizontalmente */
 }
 
 .contenedor h2{
