@@ -130,6 +130,10 @@ section h1{
     flex: 1;
 }
 
+.texto img{
+    justify-content: center;
+}
+
 .contenedor h2{
     font-size: 40px;
 }
