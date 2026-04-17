@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  justify-items: center;
+  font-family: Arial, sans-serif;
+}
+
+main{
+    background-color: #03173a; /* Gris claro */
+    padding: 0rem 2.5rem;
+    padding-bottom: 2.5rem;
+    width: 1200px;
+    min-height: calc(100vh - 300px); /* Resta la altura del header */
+    height: 100%;
+}
+
+/* CSS DEL HEADER DONDE ESTA LA FOTO Y LAS REDES SOCIALES */
+
+header {
+  padding: 1rem;
+  background-image: linear-gradient(to top, #00358d 9%, #03173a 67%);
+  text-align: center;
+  height: 200px;
+  width: 1200px;
+  justify-content: center;
+  align-items: center;
+}
+
+header img{
+    object-fit: cover;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 50%;
+}
+
+header h1 {
+    color: #FFF;
+    font-size: 5rem;
+}
+
+header h3 {
+    color: #FFF;
+    margin: 0.5rem 0;
+    font-style: italic;
+}
+
+header h4 {
+    color: #FFF;
+    margin: 0.5rem 0;
+    font-style: italic;
+}
+
+/* CSS DEL HEADER DONDE ESTA LA BARRA DE MENU */
+
+nav {
+    background-color: #2382AF;
+    overflow: hidden;
+    width: 1200px;
+    justify-items: center;
+}
+
+
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    float: inline-start;
+}
+
+nav ul li a {
+    padding: 12px 42px;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-family: Arial;
+}
+
+nav ul li a:hover {
+    background: #77C1E4;
+}
+
+.menu-fixed{
+    position: fixed;
+    z-index:1000;
+    top:0;
+    width: 100%;
+}
+
+
+/* CSS DE LOS LINKEOS */
+
+
+/* CSS DE ABOUT */
+
+.perfil img{
+    width: 100%;
+    max-width: 300px;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+section{
+    color: #fff;
+}
+
+section h1{
+    text-align: center;
+    font-size: 52px;
+    padding: 2.5rem;
+}
+
+.contenedor {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2.5rem;
+}
+
+.texto{
+    flex: 1;
+}
+
+.contenedor h2{
+    font-size: 40px;
+}
+
+.contenedor .sub {
+    font-style: italic;
+    font-size: 24px;
+}
+
+.contenedor p{
+    text-align: justify;
+    font-size: 16px;
+}
+
+.contenedor a{
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+/* CSS DE REPRODUCTOR */
+
+
+    .controls {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+/* CSS DE GALERIA DE IMAGENES */
+
+.G-Cont {
+    width: 90%;
+    max-width: 1100px;
+    margin:  auto;
+    display: flex;
+    padding: 0;
+    text-align: center;
+}
+
+.G-Cont h2{
+    padding: 2rem;
+}
+
+.Column {
+    flex: 25%;
+    padding: 5px;
+}
+
+.Column img{
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.Column img:hover{
+    transform: rotate(5deg) scale(1.1);
+}
+
+.Column video:hover{
+    transform: rotate(5deg) scale(1.1);
+}
+
+@media (max-width: 600px){
+    .Column{
+        flex: 100%;
+    }
+}
+
+@media (max-width: 800px){
+    .Column{
+        flex: 50%;
+    }
+}
+
+/* CSS DE COLUMNAS DE AUDIO */
+
+.ColumnA {
+    flex: 25%;
+    padding: 1rem 20px;
+    margin-inline: 2rem;
+    width: 300px;
+}
+
+.Conaudio{
+    background: #333;
+    padding: 1rem 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    margin: 2rem 0;
+}
+
+.Conaudio audio {
+    width: 100%;
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.Conaudio a {
+    padding: 15px;
+    margin: 1rem;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    background: #2382AF;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+a:hover {
+    background: #77C1E4;
+}
+
+@media (max-width: 600px){
+    .ColumnA{
+        flex: 100%;
+    }
+}
+
+@media (max-width: 800px){
+    .ColumnA{
+        flex: 50%;
+    }
+}
+
+/* CSS DE PUBLICACIONES */
+
+.contenedorpu {
+    text-align: justify;
+    padding: 42px;
+    color: #fff;
+}
+
+.contenedor h2{
+    font-size: 40px;
+}
+
+.contenedor .sub {
+    font-style: italic;
+    font-size: 24px;
+}
+
+.contenedor p{
+    font-size: 16px;
+}
+
+.contenedorpu a{
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+footer{
+    color: #fff;
+    height: 100%;
+    width: 1200px;
+    background-color: #2382AF;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    padding: 50px 50px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+.entrada {
+  padding: 1.5 rem;
+  margin-bottom: 2 rem;
+  border-radius: 8 px;
+  box-shadow: 0 2 px 5 px rgba (0,0,0,0,1);
+}
+
+.entrada h2 {
+  color: #007bff;
+}
+
+.entrada .fecha {
+  font-style: italic;
+  color: #777;
+  font-size: 0.9 rem;
+}
+
+.entrada .sub {
+  font-style: italic;
+  color: #fff;
+  font-size: 0.9 rem;
+}
+
+.entrada a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.entrada p{
+    color: #fff;
+}
+
+.entrada a:hover {
+  text-decoration: underline;
+}
